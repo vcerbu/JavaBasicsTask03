@@ -11,26 +11,25 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        for (int[] array : DataUtils.returnArray(3, 3)) {
-            System.out.println(Arrays.toString(array));
-        }
+        System.out.println("Create array: ");
+        System.out.println(Arrays.toString(DataUtils.createArray(4, 4)));
 
-        System.out.println("Random filled arrays: ");
-        System.out.println(Arrays.toString(DataUtils.generateRandomArray(new double[]{1.5, 2, 3, 6.4, 6, 4, 5})));
-        System.out.println(Arrays.toString(DataUtils.generateRandomArray(new float[]{1.5f, 2, 3.8f, 6.4f, 6, 4, 5})));
-        System.out.println(Arrays.toString(DataUtils.generateRandomArray(new int[]{1, 2, 3, 6, 6, 4, 5})));
-        System.out.println(Arrays.toString(DataUtils.generateRandomArray(new char[]{'1', '4', 'a', '5', 'b', 'a'})));
+        System.out.println("Random filled array: ");
+        System.out.println(Arrays.toString(DataUtils.fillArrayWithRandomNumbers(new int[]{1, 2, 3, 6, 6, 4, 5})));
+        //System.out.println(Arrays.toString(DataUtils.fillArrayWithRandomNumbers(new double[]{1.5, 2, 3, 6.4, 6, 4, 5})));
+        //System.out.println(Arrays.toString(DataUtils.fillArrayWithRandomNumbers(new float[]{1.5f, 2, 3.8f, 6.4f, 6, 4, 5})));
+        //System.out.println(Arrays.toString(DataUtils.fillArrayWithRandomNumbers(new char[]{'1', '4', 'a', '5', 'b', 'a'})));
 
-        System.out.println("Output arrays: ");
-        DataUtils.outputArray(new double[]{1.5, 2, 3, 6.4, 6, 4, 5});
-        DataUtils.outputArray(new float[]{1.5f, 2, 3.8f, 6.4f, 6, 4, 5});
-        DataUtils.outputArray(new int[]{5, 6, 12, 11, 122, 6, 5});
-        DataUtils.outputArray(new char[]{'z', 'd', 'a', 'c', 'b', 'f', 'a'});
+        System.out.println("Printed array: ");
+        DataUtils.printArray(new int[]{5, 6, 12, 11, 122, 6, 5});
+        //DataUtils.printArray(new double[]{1.5, 2, 3, 6.4, 6, 4, 5});
+        //DataUtils.printArray(new float[]{1.5f, 2, 3.8f, 6.4f, 6, 4, 5});
+        //DataUtils.printArray(new char[]{'z', 'd', 'a', 'c', 'b', 'f', 'a'});
 
-        System.out.println("Sorted arrays: ");
-        DataUtils.sortArray(new double[]{1.5, 2, 3, 6.4, 6, 4, 5});
-        DataUtils.sortArray(new float[]{1.5f, 2, 3.8f, 6.4f, 6, 4, 5});
+        System.out.println("Sorted array: ");
         DataUtils.sortArray(new int[]{5, 6, 12, 11, 122, 6, 5});
-        DataUtils.sortArray(new char[]{'z', 'd', 'a', 'c', 'b', 'f', 'a'});
+        //DataUtils.sortArray(new double[]{1.5, 2, 3, 6.4, 6, 4, 5});
+        //DataUtils.sortArray(new float[]{1.5f, 2, 3.8f, 6.4f, 6, 4, 5});
+        //DataUtils.sortArray(new char[]{'z', 'd', 'a', 'c', 'b', 'f', 'a'});
     }
 }
